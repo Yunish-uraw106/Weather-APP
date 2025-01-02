@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main class="weather-container">
+        <section class="input-section">
+            <label for="city" class="input-label">City Name</label>
+            <input id="city" type="text" class="city-field" placeholder="Enter city, e.g., Dharan, Biratnagar">
+            <div class="button-group">
+                <button id="search-city" class="btn primary">Search</button>
+                <span class="divider">or</span>
+                <button id="current-location" class="btn secondary">Use Current Location</button>
+            </div>
+        </section>
+        <section class="weather-display">
+            <article id="current-weather" class="weather-summary">
+                <h2>City Name (Date)</h2>
+                <p>Temperature: <span class="temp">--</span>&deg;C</p>
+                <p>Wind Speed: <span class="wind">--</span> m/s</p>
+                <p>Humidity: <span class="humidity">--</span>%</p>
+            </article>
+            <section class="forecast">
+                <h2>4-Day Forecast</h2>
+                <ul id="forecast-list" class="forecast-cards">
+                   
+                </ul>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
